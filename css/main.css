@@ -97,6 +97,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
   text-align: left;
 }
 
@@ -112,17 +113,21 @@ ol {
 
 a {
   color: #e2e3ed;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
   text-decoration: none;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.875em;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.125em;
   margin: 20px 0;
 }
@@ -153,13 +158,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-
-/***** base style *****/
-
-.content-wrapper {
-  width: 90%;
-  margin: 50px 0;
+  background-color: #202322;
 }
 
 /***** header style *****/
@@ -169,7 +168,7 @@ header {
 }
 
 header .content-wrapper {
-  width: 90%;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,23 +180,27 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 80%;
-  padding: 0;
-  margin: 0;
+  width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 header nav ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  padding: 0;
-  list-style-type: none;
+}
+
+header nav ul li {
+  font-size: 1.125em;
 }
 
 .header-divider {
+  background: #3a3a3a; 
   width: 100%;
   height: 1px;
-  margin: 10px 0;
+  margin: 10px 0 20px 0;
 }
 
 
@@ -206,6 +209,7 @@ header nav ul {
 
 footer {
   flex-direction: column;
+  text-align: center;
 }
 
 footer p {
@@ -215,7 +219,6 @@ footer p {
 footer .content-wrapper {
   margin: 50px 0;
   width: 55%;
-  text-align: center;
 }
 
 footer .contact {
@@ -239,7 +242,6 @@ footer .copyright p {
 }
 
 
-
 /***** mobile style -homepage  *****/
 
 /* hero area */
@@ -251,6 +253,13 @@ footer .copyright p {
   width: 100%;
 }
 
+.hero-area h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 /* aside */
 
 aside {
@@ -258,12 +267,35 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 /* form */
-.form-description h3 {
-  margin-top: 0;
-  margin-bottom: 0;
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* features */
@@ -271,14 +303,17 @@ aside {
 .features {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
   width: 100%;
 }
 
 .features h2 {
-  margin: 0;
-  padding-top: 40px;
+  margin-bottom: 60px;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
 }
 
 .features-items {
@@ -286,19 +321,12 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
-  padding: 0;
-  text-align: center;
 }
 
-.features-items article {
-  text-align: center;
-  width: 60%;
-  padding: 20px 0;
-}
-
-.features p{
+.features p {
   margin: 0;
+  padding: 0 40px;
+  text-align: center;
 }
 
 
@@ -308,20 +336,24 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  margin: 0;
+  background-color: #2a423a;
 }
 
-.review h2 {
+.reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
+  width: 80%;
 }
 
 .reviews h3 {
   width: 45%;
+  margin: 20px 0;
 }
 
 /***** mobile style - about page *****/
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,6 +361,7 @@ aside {
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -342,6 +375,7 @@ aside {
 /***** mobile style - faq page *****/
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,6 +383,7 @@ aside {
 }
 
 .faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -358,10 +393,15 @@ aside {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .faq-content {
   margin-bottom: 50px;
+}
+ 
+.faq-content h4 {
+  line-height: 1.333;
 }
 
 
@@ -453,11 +493,12 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-/***** tablet style *****/
+
 
 @media only screen and (min-width: 768px) {
+  /***** tablet style *****/
 
-  /*** base style ***/
+  /*** general styles ***/
 
   html,
   body {
@@ -469,16 +510,36 @@ aside {
     margin: 10px 0;
   }
 
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
   /***** homepage *****/
   /*** header ***/
 
   header {
     justify-content: space-around;
+    padding: 33px 0;
   }
 
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   header nav {
@@ -487,8 +548,12 @@ aside {
 
   header nav ul {
     justify-content: space-between;
-    }
+  }
   
+  header nav ul li {
+      font-size: 1em;
+   }
+
   .header-divider {
     display: none;
   }
@@ -517,16 +582,16 @@ aside {
     margin: 0;
   }
 
-  .form h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-
-  input {
-    margin: 5px 5px 5px 0;
+  .hero-area h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
   }
 
   /* features */
+
+  .features h2 {
+    margin-bottom: 20px;
+  }
 
   .features article {
     display: flex;
@@ -545,8 +610,53 @@ aside {
 
   .reviews article {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
   }
+
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews article div {
+    width: 40%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
+
+  /* Footer */
+
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+      line-height: 1.285;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
 
   /***** about page *****/
 
@@ -565,6 +675,7 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    width: 80%;
   }
 
   .contact-content {
@@ -576,6 +687,10 @@ aside {
   .contact-content div {
     width: 45%;
     margin: 0;
+  }
+  
+  .contact-content h4 {
+    font-size: 1.5em;
   }
 
 
@@ -594,17 +709,20 @@ aside {
   .faq-content {
     flex-basis: 40%;
   }
+  
+  .faq h4,
+  .faq p {
+      font-size: .875em;
+      line-height: 1.125;
+  }
 }
  
 
-
-
-
-/***** desktop style *****/
-
 @media only screen and (min-width: 1200px) {
 
-  /*** base style ***/
+  /***** desktop style *****/
+  
+  /*** general styles ***/
 
   html,
   body {
@@ -613,15 +731,29 @@ aside {
 
   .content-wrapper {
     max-width: 1000px;
-    margin: 10px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
   }
 
   /***** homepage *****/
   /*** header ***/
 
   header {
-    justify-content: space-around;
+    padding: 15px 0;
   }
+
 
   header .content-wrapper {
     width: 100%;
@@ -635,57 +767,88 @@ aside {
   header nav ul {
     justify-content: space-between;
     }
-  
-  .header-divider {
-    display: none;
-  }
 
 
   /*** hero area ***/
 
   /* aside */
 
-  
   aside .content-wrapper {
-    margin: 50px 0;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
+    justify-content: space-around;
   }
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 40%;
-    margin: 0;
+    width: 30%;
   }
+
+  .hero-area h1 {
+    font-size: 3.75em;
+    max-width: 60%;
+  }
+  
+  .form-description p {
+    font-size: 1.125em;
+  }
+
+  /* form */
 
   .form h3 {
     margin-top: 0;
     margin-bottom: 10px;
   }
 
-  input {
-    margin: 5px 50px 5px 0;
-  }
-
   /* features */
 
-  .features article {
-    display: flex;
-    justify-content: center;
-    align-items: column wrap;
-    flex-flow:column wrap;
-    flex-basis: 33%;
+  .features h2 {
+    width: 90%;
   }
 
   .features .features-item-description {
     width: 33%;
   }
   
+  /* review */
 
-  /* no update for about and faq pages */
-
+  .reviews h2 {
+    padding-bottom: 50px; 
+  }
   
+  .reviews article div {
+    width: 50%;
+  }
+
+  footer h4 {
+    font-size: 1.875em;
+  }
+
+
+  /***** about page *****/
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+      width: 95%;
+      font-size: 3em;
+  }
+
+  .contact-content h4 {
+    font-size: 1.875em;
+  }
+
+  /*****  faq page *****/
+
+  .faq h2 {
+    width: 100%;
+    font-size: 3em;
+  }
+    
+  .faq h4,
+  .faq p {
+      font-size: 1.125em;
+      line-height: 1;
+  }
+  
+
 }
 
 
