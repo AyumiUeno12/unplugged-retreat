@@ -137,6 +137,14 @@ p {
   line-height: 1.285em;
 }
 
+img { 
+	width: 100%;
+}
+ 
+figure {
+  margin: 0;
+}
+
 address {
   font-family: 'Open Sans', sans-serif;
   font-size: .875em;
@@ -169,6 +177,14 @@ header {
 
 header .content-wrapper {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header figure {
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,13 +267,17 @@ footer .copyright p {
   justify-content: center;
   flex-flow: row wrap;
   width: 100%;
+  min-height: 500px;
+  background: url(../img/hero.jpg) center no-repeat #333;
+  background-size: cover;
 }
 
 .hero-area h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.25em;
+  font-size: 3.75em;
   font-weight: 500;
   line-height: 1.2;
+  max-width: 80%;
 }
 
 /* aside */
@@ -301,10 +321,12 @@ input[type=button] {
 /* features */
 
 .features {
+  background: url('../img/bg.png');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  width: 100%;
 }
 
 .features h2 {
@@ -349,6 +371,12 @@ input[type=button] {
   width: 45%;
   margin: 20px 0;
 }
+
+.reviews article {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 /***** mobile style - about page *****/
 
@@ -760,6 +788,10 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  header figure {
+    width: 24%;
+  }
+
   header nav {
     width: 20%;
   }
@@ -804,9 +836,10 @@ input[type=button] {
     width: 90%;
   }
 
-  .features .features-item-description {
-    width: 33%;
+  .features article {
+    flex-basis: 33%;
   }
+
   
   /* review */
 
