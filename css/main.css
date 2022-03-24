@@ -133,8 +133,8 @@ h4 {
 }
 
 p {
-  font-size: .875em;
-  line-height: 1.285em;
+  font-size: .8em;
+  line-height: 1.2em;
 }
 
 img { 
@@ -153,7 +153,7 @@ address {
 
 .content-wrapper {
   width: 90%;
-  margin: 50px 0;
+  margin: 30px 0;
 }
 
 
@@ -206,6 +206,7 @@ header nav ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  padding: 0;
 }
 
 header nav ul li {
@@ -230,10 +231,10 @@ footer {
 
 footer p {
   margin: 0;
+  line-height: 1.5em;
 }
 
 footer .content-wrapper {
-  margin: 50px 0;
   width: 55%;
 }
 
@@ -274,10 +275,10 @@ footer .copyright p {
 
 .hero-area h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 3.75em;
+  font-size: 2.1em;
   font-weight: 500;
   line-height: 1.2;
-  max-width: 80%;
+  max-width: 90%;
 }
 
 /* aside */
@@ -331,6 +332,7 @@ input[type=button] {
 
 .features h2 {
   margin-bottom: 60px;
+  line-height: 1.1em;
 }
 
 .features article {
@@ -347,7 +349,7 @@ input[type=button] {
 
 .features p {
   margin: 0;
-  padding: 0 40px;
+  padding: 0 10px;
   text-align: center;
 }
 
@@ -364,19 +366,24 @@ input[type=button] {
 .reviews h2 {
   margin-bottom: 40px;
   line-height: 1;
-  width: 80%;
+  width: 95%;
 }
 
 .reviews h3 {
-  width: 45%;
+  width: 60%;
   margin: 20px 0;
 }
 
 .reviews article {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
+.reviews .content-wrapper article figure {
+  width: 100%;
+}
 
 /***** mobile style - about page *****/
 
@@ -535,7 +542,6 @@ input[type=button] {
 
   .content-wrapper {
     max-width: 650px;
-    margin: 10px 0;
   }
 
   h1 {
@@ -624,15 +630,16 @@ input[type=button] {
   .features article {
     display: flex;
     justify-content: center;
-    align-items: column wrap;
+    align-items: center;
     flex-flow:column wrap;
     flex-basis: 50%;
   }
 
-  .features .features-item-description {
-    width: 50%;
+  .features p {
+    width: 45%;
+    text-align: center;
+    padding: 0;
   }
-
 
   /* reviews */
 
@@ -643,10 +650,16 @@ input[type=button] {
 
   .reviews h2 {
     width: 85%;
+    padding: 30px 0 10px 0;
+    margin: 0;
   }
 
-  .reviews article div {
+  .reviews .content-wrapper article figure {
     width: 40%;
+  }
+  
+  .reviews article div {
+    width: 50%;
   }
 
   .reviews h3 {
@@ -678,7 +691,7 @@ input[type=button] {
   }
 
   footer p {
-      line-height: 1.285;
+    line-height: 1.285;
   }
 
   footer .copyright {
@@ -816,7 +829,7 @@ input[type=button] {
 
   .hero-area h1 {
     font-size: 3.75em;
-    max-width: 60%;
+    max-width: 70%;
   }
   
   .form-description p {
@@ -840,7 +853,10 @@ input[type=button] {
     flex-basis: 33%;
   }
 
-  
+  .features p {
+    width:60%;
+  }
+
   /* review */
 
   .reviews h2 {
