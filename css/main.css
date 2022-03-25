@@ -410,7 +410,7 @@ input[type=button] {
 .map figure {
   width: 100%;
   height: 0;
-  padding-bottom: 75%;
+  padding-bottom: 130%;
   position: relative;
 }
 
@@ -750,7 +750,10 @@ input[type=button] {
     font-size: 1.5em;
   }
 
-
+  .map figure {
+    padding-bottom: 70%;
+  }
+  
   /***** faq page ****/
 
   .faq .content-wrapper {
@@ -769,8 +772,8 @@ input[type=button] {
   
   .faq h4,
   .faq p {
-      font-size: .875em;
-      line-height: 1.125;
+    font-size: .875em;
+    line-height: 1.125;
   }
 }
  
@@ -892,13 +895,18 @@ input[type=button] {
 
   .mission h2,
   .contact-section .content-wrapper h2 {
-      width: 95%;
-      font-size: 3em;
+    width: 95%;
+    font-size: 3em;
   }
 
   .contact-content h4 {
     font-size: 1.875em;
   }
+
+  .map figure {
+    padding-bottom: 45%;
+  }
+  
 
   /*****  faq page *****/
 
@@ -909,8 +917,8 @@ input[type=button] {
     
   .faq h4,
   .faq p {
-      font-size: 1.125em;
-      line-height: 1;
+    font-size: 1.125em;
+    line-height: 1;
   }
   
 
