@@ -351,8 +351,13 @@ input[type=button] {
   margin: 0;
   padding: 0 10px;
   text-align: center;
+  max-width: 200px;
 }
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
 
 /* reviews */
 
