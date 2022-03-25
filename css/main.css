@@ -248,6 +248,20 @@ footer .social-icons {
   align-items: center;
 }
 
+footer .social-icons p  {
+  background-color: #527158;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons p i {
+  font-size: 1.3em
+}
+
 footer .social p {
   display: flex;
   justify-content: center;
@@ -618,6 +632,13 @@ input[type=button] {
   .footer-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  footer .social-icons {
+    width: 13em;
+    justify-content: space-between;
   }
 
   /*** hero area ***/
@@ -891,10 +912,16 @@ input[type=button] {
     width: 50%;
   }
 
+  /* footer */
+
   footer h4 {
     font-size: 1.875em;
   }
 
+  footer .social-icons {
+    width: 15em;
+    justify-content: space-between;
+  }
 
   /***** about page *****/
 
