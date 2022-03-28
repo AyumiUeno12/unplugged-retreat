@@ -183,9 +183,11 @@ header .content-wrapper {
   flex-flow: row wrap;
 }
 
-header .header-divider {
+.header-divider {
+  background: #3a3a3a; 
   margin-top: 0;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 header figure {
@@ -359,13 +361,16 @@ input[type=button] {
 .features article {
   width: 63%;
   margin: 30px 0;
+  text-align: center;
+  display: block;
 }
 
-.features-items {
+.features .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  text-align: center;
 }
 
 .features p {
